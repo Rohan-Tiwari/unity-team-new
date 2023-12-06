@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 3646414701
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c193162e6e8e2bf601a6d9b277c853d1
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 0f9fba26cbb38215f317d1fd6b1954a0
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: c193162e6e8e2bf601a6d9b277c853d1
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/BundledAssets/mynewbundle/bottle_0.prefab
+- Assets/BundledAssets/mynewbundle/test.obj
+Dependencies: []
