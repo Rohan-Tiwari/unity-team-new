@@ -17,7 +17,7 @@ using System.Linq;
 using System.Text;
 using Meta.WitAi.TTS.Utilities;
 
-public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityPointerHandler
+public class TapToCreateHandler : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityPointerHandler
 {
     private Color color_IdleState = Color.cyan;
     private Color color_OnHover = Color.red;
@@ -25,7 +25,7 @@ public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler, IMixedRealityP
     private Material material;
 
 
-    public string url ="http://192.168.246.107:5000/home/car";
+    public string url ="http://127.0.0.1:5000/home/car";
 private IProgressIndicator indicator;
 private int flag = 0;
 // default scale of object 
@@ -111,7 +111,7 @@ private TTSSpeaker speaker;
         indicatorObject.transform.localPosition = t;
         indicatorObject.transform.localScale = new Vector3(scale*15f, scale*15f, scale*15f);
         Debug.Log("Starting to load obj "+url);
-        speaker.Speak("Creating Object");
+        speaker.Speak("Creating Object. Please wait for it to Load");
         UnityWebRequest www = UnityWebRequest.Get(url);
         www.SendWebRequest();
         OpenProgressIndicator();

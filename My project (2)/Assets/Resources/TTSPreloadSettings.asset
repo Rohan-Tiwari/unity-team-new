@@ -16,7 +16,7 @@ MonoBehaviour:
     voices:
     - presetVoiceID: WIT/REBECCA
       phrases:
-      - clipID: 67777e9c1954770026a420e9dbd25b19110f1acc87bedcb771d3827c7ea4ea08
+      - clipID: 19aeabf9d921b1b1a3982551b6c7f8b295433b041ab2c6d19a29ff84ee58fff7
         textToSpeak: Hello, how are you doing? Welcome to LocoGestAR
-        downloaded: 0
+        downloaded: 1
         downloadProgress: 0

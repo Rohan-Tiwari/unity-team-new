@@ -9,16 +9,17 @@ public class TextToSpeechController: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speaker = new TTSSpeaker();
+        //speaker = new TTSSpeaker();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //speaker.Speak("Welcome, Rohan. How are you doing?");
     }
 
     private void Awake(){
+        Debug.Log(speaker);
         speaker.Speak("Welcome, Rohan. How are you doing?");
     }
 

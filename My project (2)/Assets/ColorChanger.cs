@@ -17,11 +17,15 @@
 
      void Start(){
         //rend = GetComponent<Renderer>();
+        
+        appVoiceExperience.Activate();
      }
 
      void Update()
     {
-            appVoiceExperience.Activate();
+        //should be in start
+        Debug.Log("Called in Color change update");
+            //appVoiceExperience.Activate();
     }
 
      private void SetColor(Transform trans, Color color)
@@ -48,19 +52,5 @@
         {
             rend.material.color = color;
         }
-        //re
-         //SetColor(color);
-         //if (string.IsNullOrEmpty(shapeString)) return;
-
-         /*foreach (Transform child in transform) // iterate through all children of the gameObject.
-         {
-             if (child.name.IndexOf(shapeString, StringComparison.OrdinalIgnoreCase) != -1) // if the name exists
-             {
-                 SetColor(child, color);
-                 return;
-             }
-         }*/
      }
-
-     
  }

@@ -12,61 +12,384 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae5a46bda3295124c99b0e6537ac7252, type: 3}
   m_Name: VoiceSDKSettings
   m_EditorClassIdentifier: 
-  _clientAccessToken: 5HR6NJN7X4WTDSMK5T5EDIXCWJRAE6AA
+  _clientAccessToken: 6OMWL7UHLSDWZ5SQRTYKNIDU2I2Z6AMY
   _appInfo:
-    name: praxisphaserahman
-    id: 1062445554754773
+    name: locogest_ar
+    id: 999452737829688
     lang: en
     isPrivate: 1
-    createdAt: 2023-10-23T08:28:32-0700
+    createdAt: 2023-11-17T04:00:52-0800
     trainingStatus: 1
-    lastTrainDuration: 56
-    lastTrainedAt: 2023-11-18T10:03:44-0800
-    nextTrainAt: 2023-11-18T10:02:48-0800
+    lastTrainDuration: 577
+    lastTrainedAt: 2023-12-07T14:38:37-0800
+    nextTrainAt: 2023-12-07T14:29:00-0800
     intents:
-    - id: 3490083371244948
-      name: create_object
+    - id: 1546387296118103
+      name: locogest_create_object
       entities:
-      - name: createObject:createObject
-        id: 6515797038530825
-    - id: 996358964782644
-      name: set_color
+      - name: ObjectToCreate:ObjectToCreate
+        id: 1055040092363755
+    - id: 7216736108379303
+      name: locogest_delete
+      entities: []
+    - id: 658511749790176
+      name: locogest_move
       entities:
-      - name: color:color
-        id: 714127033570923
+      - name: direction:direction_move
+        id: 647663537570691
+      - name: wit$number:units
+        id: 862775822250663
+    - id: 328745359914387
+      name: locogest_resize
+      entities:
+      - name: scale_factor:scale_factor
+        id: 3586403924957388
+      - name: wit$number:units
+        id: 862775822250663
+    - id: 383266807599336
+      name: locogest_rotate
+      entities:
+      - name: rotation:rotation
+        id: 354578493818565
+      - name: rotation_axis:rotation_axis
+        id: 1066811574749958
+      - name: wit$number:units
+        id: 862775822250663
     entities:
-    - name: color
-      id: 275373765501223
+    - name: ObjectToCreate
+      id: 865059585027287
+      lookups:
+      - free-text
+      roles:
+      - name: ObjectToCreate
+        id: 1055040092363755
+      keywords: []
+    - name: direction
+      id: 4420221448203781
+      lookups:
+      - keywords
+      roles:
+      - name: direction_move
+        id: 647663537570691
+      keywords:
+      - keyword: backward
+        synonyms:
+        - back
+        - backward
+      - keyword: backwards
+        synonyms:
+        - backwards
+      - keyword: down
+        synonyms:
+        - down
+        - downwards
+      - keyword: forward
+        synonyms:
+        - forward
+        - forwards
+      - keyword: front
+        synonyms:
+        - front
+      - keyword: left
+        synonyms:
+        - left
+        - left side
+      - keyword: right
+        synonyms:
+        - right
+        - right side
+      - keyword: up
+        synonyms:
+        - up
+        - upwards
+    - name: rotation
+      id: 1049004933089691
       lookups:
       - free-text
       - keywords
       roles:
-      - name: color
-        id: 714127033570923
+      - name: rotation
+        id: 354578493818565
       keywords:
-      - keyword: blue
+      - keyword: 5
         synonyms:
-        - blue
-    - name: createObject
-      id: 184563971390106
+        - 5
+      - keyword: 8
+        synonyms:
+        - 8
+      - keyword: 10
+        synonyms:
+        - 10
+      - keyword: 10
+        synonyms:
+        - 10
+      - keyword: 12
+        synonyms:
+        - 12
+      - keyword: 14
+        synonyms:
+        - 14
+      - keyword: 15
+        synonyms:
+        - 15
+      - keyword: 18
+        synonyms:
+        - 18
+      - keyword: 20
+        synonyms:
+        - 20
+      - keyword: 22
+        synonyms:
+        - 22
+      - keyword: 25
+        synonyms:
+        - 25
+      - keyword: 28
+        synonyms:
+        - 28
+      - keyword: 30
+        synonyms:
+        - 30
+      - keyword: 33
+        synonyms:
+        - 33
+      - keyword: 35
+        synonyms:
+        - 35
+      - keyword: 38
+        synonyms:
+        - 38
+      - keyword: 40
+        synonyms:
+        - 40
+      - keyword: 40
+        synonyms:
+        - 40
+      - keyword: 42
+        synonyms:
+        - 42
+      - keyword: 45
+        synonyms:
+        - 45
+      - keyword: 48
+        synonyms:
+        - 48
+      - keyword: 50
+        synonyms:
+        - 50
+      - keyword: 52
+        synonyms:
+        - 52
+      - keyword: 55
+        synonyms:
+        - 55
+      - keyword: 60
+        synonyms:
+        - 60
+      - keyword: 75
+        synonyms:
+        - 75
+      - keyword: 75
+        synonyms:
+        - 75
+      - keyword: 90
+        synonyms:
+        - 90
+      - keyword: 120
+        synonyms:
+        - 120
+      - keyword: 135
+        synonyms:
+        - 135
+      - keyword: 135
+        synonyms:
+        - 135
+      - keyword: 150
+        synonyms:
+        - 150
+      - keyword: 180
+        synonyms:
+        - 180
+      - keyword: 210
+        synonyms:
+        - 210
+      - keyword: 225
+        synonyms:
+        - 225
+      - keyword: 240
+        synonyms:
+        - 240
+      - keyword: 270
+        synonyms:
+        - 270
+      - keyword: 300
+        synonyms:
+        - 300
+      - keyword: 315
+        synonyms:
+        - 315
+      - keyword: 315
+        synonyms:
+        - 315
+      - keyword: 330
+        synonyms:
+        - 330
+      - keyword: 360
+        synonyms:
+        - 360
+    - name: rotation_axis
+      id: 1430441464560308
       lookups:
       - free-text
       - keywords
       roles:
-      - name: createObject
-        id: 6515797038530825
+      - name: rotation_axis
+        id: 1066811574749958
       keywords:
-      - keyword: book
+      - keyword: x
         synonyms:
-        - book
-      - keyword: car
+        - x
+        - x-axis
+      - keyword: x axis
         synonyms:
-        - car
-      - keyword: horse
+        - x axis
+      - keyword: y
         synonyms:
-        - horse
+        - y
+      - keyword: y
+        synonyms:
+        - y
+      - keyword: y axis
+        synonyms:
+        - y axis
+      - keyword: z
+        synonyms:
+        - z
+      - keyword: z
+        synonyms:
+        - z
+    - name: scale_factor
+      id: 342474541739175
+      lookups:
+      - free-text
+      - keywords
+      roles:
+      - name: scale_factor
+        id: 3586403924957388
+      keywords:
+      - keyword: 10
+        synonyms:
+        - 10
+      - keyword: 15
+        synonyms:
+        - 15
+      - keyword: 20
+        synonyms:
+        - 20
+      - keyword: 25
+        synonyms:
+        - 25
+      - keyword: 30
+        synonyms:
+        - 30
+      - keyword: 35
+        synonyms:
+        - 35
+      - keyword: 40
+        synonyms:
+        - 40
+      - keyword: 45
+        synonyms:
+        - 45
+      - keyword: 50
+        synonyms:
+        - 50
+      - keyword: 51
+        synonyms:
+        - 51
+      - keyword: 60
+        synonyms:
+        - 60
+      - keyword: 62
+        synonyms:
+        - 62
+      - keyword: 70
+        synonyms:
+        - 70
+      - keyword: 80
+        synonyms:
+        - 80
+      - keyword: 87
+        synonyms:
+        - 87
+      - keyword: 90
+        synonyms:
+        - 90
+      - keyword: 110
+        synonyms:
+        - 110
+      - keyword: 120
+        synonyms:
+        - 120
+      - keyword: 130
+        synonyms:
+        - 130
+      - keyword: 140
+        synonyms:
+        - 140
+      - keyword: 150
+        synonyms:
+        - 150
+      - keyword: 174
+        synonyms:
+        - 174
+      - keyword: 200
+        synonyms:
+        - 200
+        - double
+      - keyword: 210
+        synonyms:
+        - 210
+      - keyword: 220
+        synonyms:
+        - 220
+      - keyword: 230
+        synonyms:
+        - 230
+      - keyword: 240
+        synonyms:
+        - 240
+      - keyword: 250
+        synonyms:
+        - 250
+      - keyword: 260
+        synonyms:
+        - 260
+      - keyword: 300
+        synonyms:
+        - 300
+      - keyword: 1000
+        synonyms:
+        - 1000
+      - keyword: 2000
+        synonyms:
+        - 2000
+      - keyword: 12345
+        synonyms:
+        - 12345
+    - name: wit$number
+      id: 535a80e2-6fc8-4991-b707-50dd0c862dfb
+      lookups: []
+      roles:
+      - name: units
+        id: 862775822250663
+      keywords: []
     traits: []
-    versionTags: []
+    versionTags:
+    - name: 07_12_23
+      created_at: 2023-12-07T14:26:53-0800
+      updated_at: 2023-12-07T14:26:57-0800
+      desc: 
     voices:
     - name: wit/Rebecca
       locale: en_US
